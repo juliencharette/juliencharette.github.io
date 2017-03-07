@@ -1,22 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Julien Charette</title>
-  <meta name="description" content="Senior Web Developer in Gatineau, Ottawa.">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <style type="text/css">a,body{color:#333}body{background:#f1f1f1;font-family:'Playfair Display',Helvetica,Arial,sans-serif;margin:2rem 0;text-align:center}h1,h2,h3,h4,h5,h6{font-weight:400}h1{font-size:4rem;margin:0 0 1rem}ul{list-style:none;padding:0}ul li{display:inline-block;margin:0 .5rem}a{transition:color .3s ease-in-out}a:hover{color:#009688}</style>
-</head>
-<body>
-  <h1>Julien Charette</h1>
-  <h2>Senior Web Developer &amp; Entrepreneur</h2>
-  <p>Vice President @ <a href="http://hopsocial.ca/" target="_blank">HopSocial</a> &amp; <a href="https://wpfriendly.ca/" target="_blank">WPFriendly</a></p>
-  <ul>
-    <li><a href="https://twitter.com/JulienCharette" target="_blank">Twitter</a></li>
-    <li><a href="https://ca.linkedin.com/in/julienlambertcharette" target="_blank">Linkedin</a></li>
-    <li><a href="mailto:julien@hopsocial.ca">Email</a></li>
+---
+layout: default
+title: Julien Charette
+---
+
+<div class="home" id="home">
+  <h1 class="pageTitle">Code, bière et tranches de vie</h1>
+  <ul class="posts noList">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="date">
+          {% assign d = post.date | date: "%-d" %}
+          {% assign m = post.date | date: "%-m" %}
+          {{ post.date | date: "%-d" }}{% if d == '1' %}<sup>er</sup>{% endif %}
+          {% case m %}
+            {% when '1' %}Janvier
+            {% when '2' %}Février
+            {% when '3' %}Mars
+            {% when '4' %}Avril
+            {% when '5' %}Mai
+            {% when '6' %}Juin
+            {% when '7' %}Juillet
+            {% when '8' %}Août
+            {% when '9' %}Septembre
+            {% when '10' %}Octobre
+            {% when '11' %}Novembre
+            {% when '12' %}Décembre
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+        </span>
+        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
+      </li>
+    {% endfor %}
   </ul>
-</body>
-</html>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Articles suivants</a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Articles précédents</a>
+    {% endif %}
+  </div>
+</div>

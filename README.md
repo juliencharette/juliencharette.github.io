@@ -1,2 +1,2 @@
-# juliencharette.github.io
+# JulienCharette.com
 Personal Blog

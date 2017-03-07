@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "On jase là"
+date:   2017-03-07
+---
+
+<p class="intro">
+  <span class="dropcap">S</span>alut salut et bienvenus sur mon nouveau site web. Ça fait un
+  certain temps que je songe à démarrer mon propre blogue pour discuter de tout et de rien.
+  Ça ne sera pas trop intense pour commencer, question que je prenne l'habitude d'écrire plus souvent.
+</p>
+
+Ici, c'est mon petit sanctuaire où je me permets de parler librement de ce que je veux.
+Il va y avoir mes opinions personnelles sur une variété de sujets, plusieurs trucs
+concernant la programmation web, le démarrage d'entreprise et quelques expériences personnelles.
+
+Je vais essayer de publier un article à tous les deux semaines dans la mesure du possible.
+Laisse-moi te dire que pour un gars qui n'a presque pas fait de rédaction depuis le secondaire,
+c'est tout un défi que je me lance.
+
+<p class="note">
+  En passant, j'ai l'intention d'écrire comme je m'exprime. Puisque je viens de Gatineau, il va y avoir du jargon et du franglais
+  sur un maudit temps :wink:
+</p>
+
+Pour ceux que ça intéresse, ce site web ne m'a pas coûté une cenne autre que le nom de domaine. Voici quelques-unes des technologies utilisées :
+
+<ul>
+  <li><a href="https://jekyllrb.com/" target="_blank">Jekyll</a> pour générer le site web statique</li>
+  <li><a href="https://github.com/brianmaierjr/long-haul" target="_blank">Long Haul</a> pour le design</li>
+  <li><a href="https://pages.github.com/" target="_blank">Github Pages</a> pour l'hébergement web</li>
+  <li><a href="https://formspree.io/" target="_blank">Formspree</a> pour gérer mon <a href="/contact/">formulaire de contact</a></li>
+</ul>
+
+C'est tout pour aujourd'hui. À la prochaine!

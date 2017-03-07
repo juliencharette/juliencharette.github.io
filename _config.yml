@@ -1,0 +1,30 @@
+title: Julien Charette
+description: Développeur web, père de famille, karatéka, gamer compulsif et amateur de bière.
+lang: fr
+
+url: http://juliencharette.com
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+gems:
+ - jekyll-paginate
+ - jemoji
+paginate: 5
+
+navigation:
+ - title: Accueil
+   url: /index.html
+ - title: À Propos
+   url: /a-propos
+ - title: Contact
+   url: /contact
+
+social:
+   twitter: juliencharette
+   linkedin: julienlambertcharette
+   email: julien.lambertcharette@gmail.com
+
+google_analytics: ""
