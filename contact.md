@@ -7,7 +7,7 @@ title: Contact
   <h1 class="pageTitle">On s'appelle et on déjeune?</h1>
   <div class="contactContent">
     <p class="intro">Toujours partant pour un café, une «p'tite frette», ou bien un gros verre de lait au chocolat. Si tu as un projet en tête, ça m'intéresse.</p>
-    <form action="http://formspree.io/julien.lambertcharette@mail.com" method="POST">
+    <form action="http://formspree.io/julien.lambertcharette@gmail.com" method="POST">
       <input type="hidden" name="_subject" value="Nouveau message de JulienCharette.com">
       <input type="text" name="_gotcha" style="display:none" />
       <label for="name">Nom</label>
