@@ -1,6 +1,7 @@
 ---
 layout: default
 title: À propos
+description: JulienCharette.com - Trucs et astuces sur le développement web
 ---
 
 <div class="post">

@@ -5,6 +5,20 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:site_name" content="Julien Charette" />
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@JulienCharette" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:creator" content="@JulienCharette" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ "/assets/img/favicon.png" | prepend: site.baseurl }}" />
 
