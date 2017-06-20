@@ -14,7 +14,7 @@ description: JulienCharette.com - Trucs et astuces sur le développement web
   <ul class="expertise">
     <li class="expertise-item">
       <div class="expertise-item-icon">
-        <img src="{{ '/assets/img/developpement-web.png' | prepend: site.baseurl }}" alt="">
+        <img src="{{ '/assets/img/developpement-web.png' | prepend: site.baseurl }}" alt="Picto Développement Web">
       </div>
       <div class="expertise-item-content">
         <h4>Développement web</h4>
@@ -27,7 +27,7 @@ description: JulienCharette.com - Trucs et astuces sur le développement web
     </li>
     <li class="expertise-item">
       <div class="expertise-item-icon">
-        <img src="{{ '/assets/img/commerce-electronique.png' | prepend: site.baseurl }}" alt="">
+        <img src="{{ '/assets/img/commerce-electronique.png' | prepend: site.baseurl }}" alt="Picto Commerce Électronique">
       </div>
       <div class="expertise-item-content">
         <h4>Commerce électronique</h4>
